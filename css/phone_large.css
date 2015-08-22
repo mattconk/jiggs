@@ -1,0 +1,41 @@
+/* 
+    Document   : table
+    Created on : Sep 15, 2013, 2:23:27 PM
+    Author     : Hal 9000
+    Description:
+        Purpose of the stylesheet follows:
+
+        Landscape phones and down
+*/
+
+@media (max-width: 767px)  { 
+
+    img {
+        width: 100%;
+    }
+    
+    #section_1 {
+        background-color: #FEE3C5;
+        background-image: none;
+        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+
+    }  
+    
+    #section_2 {
+        background-color: #8C1C03;
+        background-image: none;
+        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    }
+    
+    #section_3 {
+        background-color: #B9BAFF;
+        background-image: none;
+        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    }
+    
+    
+    
+    
+    
+}
+

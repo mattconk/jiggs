@@ -1,0 +1,913 @@
+/* Global */
+
+body {
+	font-family: 'Verdana', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height:21px;
+	color: #929292;
+	overflow-x:hidden;
+}
+::selection {
+	background: #c84942;
+	color:#fff;
+}
+::-moz-selection {
+	background: #c84942; /* Firefox */
+	color:#fff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	color:#c84942;
+}
+a:visited {
+	color: #c84942;
+	text-decoration: none;
+}
+
+.fright{float:right;
+}
+.fleft{float:left;
+}
+
+.overflow_hidden {overflow-x:hidden;}
+
+/* Navigation */
+#undefined-sticky-wrapper {position:relative;height:0 !important;}
+.menu {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:76px;
+	background:#3e3e3e;
+	z-index:9999;
+}
+#logo {
+	float:left;
+	margin-bottom:0;
+	margin-left:0;
+}
+
+#nav {
+	text-align: right;
+}
+.navigation{
+	list-style: none;
+	margin: 0;
+}
+ul.navigation {
+	overflow-x:hidden;
+	position:relative;
+	text-align:center;
+	margin:0 auto;
+	padding:0;
+	width:770px;
+}
+.navigation li{
+	display:inline-block;
+	text-align:center;
+	width:128px;
+	padding:28px 0 7px;
+	margin:0 -2.5px;
+	text-transform:none;
+	background:none;
+	border-bottom:1px solid #616161;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	font-size:22px;
+	line-height:20px;
+	color:#b7b7b7;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.navigation li:hover,
+.navigation .active {
+	cursor:pointer;
+	color:#fff;
+}
+
+/* ________________ LavaLamp ________________ */
+.effect {
+	position: absolute;
+	left: -130px;
+	transition: 0.5s ease-in-out;
+}
+.navigation li:nth-child(1):hover ~ .effect {
+	left: 0; /* середина первого <a> */
+}
+.navigation li:nth-child(2):hover ~ .effect {
+	left: 128px;  /* середина второго <a> */
+}
+.navigation li:nth-child(3):hover ~ .effect {
+	left: 256px; /* середина третьего <a> */
+}
+.navigation li:nth-child(4):hover ~ .effect {
+	left: 384px; /* середина четвертого <a> */
+}
+.navigation li:nth-child(5):hover ~ .effect {
+	left: 512px; /* середина четвертого <a> */
+}
+.navigation li:nth-child(6):hover ~ .effect {
+	left: 640px; /* середина четвертого <a> */
+}
+
+.ph-line-nav .effect {
+	position:relative;
+	z-index:100;
+	width: 128px;
+	height: 3px;
+	bottom: 1px;
+	background: #c84942;
+	margin-left:0;
+}
+
+/* _______________ //LavaLamp _______________ */
+
+.btn_dropdown {
+	display:none;
+	cursor:pointer;
+	background:#fff;
+	margin:20px 30px 0 0;
+	width:130px;
+	height:36px;
+	text-align:center;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:700;
+	font-size:18px;
+	line-height:36px;
+	color:#3e3e3e;
+	border-radius:5px;
+}
+.btn_dropdown:hover {color:#3e3e3e;}
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	padding:0;
+	z-index:12;
+	overflow:hidden;
+}
+
+
+h2 {
+	display:block;
+	margin:0 0 23px;
+	padding:0;
+	text-transform:none;
+	text-align:left;
+	font-style:normal;
+	border-bottom:1px solid #c9c9c9;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 70px;
+	line-height: 82px;
+	color:#343434;
+	font-weight: 400;
+}
+h2 span {
+	border-bottom:3px solid #c84942;
+}
+
+h3 {
+	margin:0;
+	padding:40px 0 32px 0;
+	text-transform:uppercase;
+	text-align:center;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:800;
+	font-size:32px;
+	font-style:normal;
+	line-height:36px;
+	color:#3e3e3e;
+}
+
+h4 {
+	margin:0;
+	padding:0 0 15px;
+	text-transform:none;
+	text-align:left;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	font-size:32px;
+	font-style:normal;
+	line-height:36px;
+	color:#3e3e3e;
+}
+
+img.icon_img {
+	float:left;
+	margin-right:20px;
+	margin-top:20px;
+	margin-bottom:25px;
+}
+
+.effect_2 {
+	background:url(img/parallax_images/effect_2.png) repeat left top;
+	position:relative;
+	top:0;
+	bottom:-57px;
+	height:100%;
+	z-index:999 !important;
+}
+
+/* ____________________________________ Slide 1 ____________________________________ */ 
+
+.padding_slide1 {padding:241px 0 101px 0;
+}
+
+.inset_shadow {
+	position:absolute;
+	z-index:10;
+	left:0;
+	right:0;
+	top:0;
+	bottom:76px;
+	box-shadow:0 0 60px rgba(0,0,0, 0.7) inset;
+}
+
+#slide1{
+/* 	background-image:url("http://localhost/mattconk.com/portfolio/jiggs/img/parallax_images/slide1_bg.jpg"); */
+	background-image:url("../img/parallax_images/slide1_bg.jpg");
+	background-position:0 0 !important;
+	background-size: cover !important;
+	width:100%;
+	text-align:center;
+}
+
+.filtr_bg {
+	position:fixed;
+	z-index:11;
+	text-align:center;	
+	left:50%;
+	margin-left:-405px;
+}
+@media only screen and (max-width: 1024px) {
+	.filtr_bg {position:relative;}
+}
+
+#slide1 h1 {
+	float:none;
+	display:block;
+	border-right:none;
+	margin: 0 0 25px 0;
+	padding:0 0 0 12px;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 165px;
+	line-height: 150px;
+	color:#fff;
+	font-weight:700;
+	text-shadow:5px 3px 6px rgba(0,0,0,0.26);
+}
+#slide1 h3 {
+	float:none;
+	display:block;
+	border-right:none;
+	margin:0;
+	padding:0 0 0 15px;
+	letter-spacing:12px;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 132px;
+	line-height: 105px;
+	color:#fff;
+	font-weight:700;
+	text-shadow:5px 3px 6px rgba(0,0,0,0.26);
+}
+#slide1 p {
+	float:none;
+	display:block;
+	border-right:none;
+	margin:0;
+	padding:0 0 0 31px;
+	letter-spacing:27px;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 62px;
+	line-height: 52px;
+	color:#fff;
+	font-weight:700;
+	text-shadow:5px 3px 6px rgba(0,0,0,0.26);
+}
+
+#slide1 span {
+	margin:0;
+	padding:0 0 0 20px;
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 96px;
+	line-height: 80px;
+	color:#fff;
+	font-weight:700;
+	letter-spacing:23px;
+	text-shadow:5px 3px 6px rgba(0,0,0,0.26);
+}
+.slogan_text {
+	display:inline-block;
+	padding:0 25px;
+	text-transform:uppercase;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:800;
+	font-size:38px;
+	line-height:47px;
+	color:#fff;
+}
+.center_bord {
+	display:block;
+	margin:26px auto 24px;
+	background:#fff;
+	height:1px;
+	width:753px;
+}
+
+
+#slide1 .button {
+	cursor:pointer;
+	display:block;
+	margin:52px auto 0;
+	width:64px;
+	height:64px;
+	border:none;
+	text-transform:uppercase;
+	background:url(../img/parallax_images/button_down.png) no-repeat center bottom #fff;
+	border-radius:50%;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0,0.30);
+     -moz-box-shadow: 0 6px 6px rgba(0,0,0,0.30);
+          box-shadow: 0 6px 6px rgba(0,0,0,0.30);
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+#slide1 .button:hover {
+	margin:53px auto 0;
+	-webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+
+
+/* ____________________________________ Slide 2 ____________________________________ */ 
+
+#slide2 {
+	background:url(../img/parallax_images/slide2_bg.jpg) repeat left top;
+	width:100%;
+	padding:86px 0 69px;
+}
+
+/* ___________________________________ //Slide 2 ___________________________________ */ 
+
+
+
+
+
+/* ____________________________________ Slide 4 ____________________________________ */ 
+
+#slide4 {
+	background:url(../img/parallax_images/slide4_bg.jpg) repeat left top;
+	width:100%;
+	padding:86px 0 69px;
+}
+#slide4 h2 {
+	color:#b8b8b8;
+	border-bottom:1px solid #4e4e4e;
+}
+
+
+/* ____________ SERVICES_BLOCK ___________ */
+.icon_bord {
+	overflow:hidden;
+	border-radius:50%;
+	position:relative;
+	top:0;
+	left:50%;
+	margin-left:-66px;
+	width:132px;
+	height:132px;
+	background:url(../img/parallax_images/icon_bord.png) no-repeat;
+}
+.servc_block:hover .icon_bord {
+	background:url(../img/parallax_images/icon_bord_h.png) no-repeat;
+}
+
+.icon1, .icon1_h {
+	position:absolute;
+	top:7px;
+	left:7px;
+	height:118px;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.servc_block .icon1,
+.servc_block:hover .icon1_h {
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+.servc_block:hover .icon1,
+.servc_block .icon1_h {
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+
+.servc_block:hover .icon1 {
+	transform: scale(3);
+}
+.servc_block .icon1_h {
+	transform: scale(0);
+}
+.servc_block:hover .icon1_h {
+	transform: scale(1);
+}
+
+.ca-menu li{
+    min-height: 265px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.ca-menu li:last-child{
+    margin-right: 0px;
+}
+.ca-menu li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.ca-content{
+    position: absolute;
+    left: 0px;
+    top: 132px;
+}
+.ca-main{
+    padding:21px 0 19px;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+	color:#a3a3a3;
+	font-weight:400;
+    text-align: center;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.ca-sub{
+    text-align:center;
+    color: #6f6f6f;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.ca-menu li:hover .ca-main{
+    color: #c84942;
+    -webkit-animation: moveFromLeftRotate 300ms ease;
+    -moz-animation: moveFromLeftRotate 300ms ease;
+    -ms-animation: moveFromLeftRotate 300ms ease;
+}
+.ca-menu li:hover .ca-sub{
+    -webkit-animation: moveFromBottom 500ms ease;
+    -moz-animation: moveFromBottom 500ms ease;
+    -ms-animation: moveFromBottom 500ms ease;
+}
+@-webkit-keyframes moveFromLeftRotate{
+    from {
+        -webkit-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -webkit-transform: translateX(0%) rotate(0deg);
+    }
+}
+@-moz-keyframes moveFromLeftRotate{
+    from {
+        -moz-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -moz-transform: translateX(0%) rotate(0deg);
+    }
+}
+@-ms-keyframes moveFromLeftRotate{
+    from {
+        -ms-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -ms-transform: translateX(0%) rotate(0deg);
+    }
+}
+
+@-webkit-keyframes moveFromBottom {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+    to {
+        -webkit-transform: translateY(0%);
+    }
+}
+@-moz-keyframes moveFromBottom {
+    from {
+        -moz-transform: translateY(100%);
+    }
+    to {
+        -moz-transform: translateY(0%);
+    }
+}
+@-ms-keyframes moveFromBottom {
+    from {
+        -ms-transform: translateY(100%);
+    }
+    to {
+        -ms-transform: translateY(0%);
+    }
+}
+/* ____________ SERVICES_BLOCK ___________ */
+
+/* ___________________________________ //Slide 4 ___________________________________ */ 
+
+
+
+
+/* ____________________________________ Slide 6 ____________________________________ */ 
+
+#slide6 {
+	background:url(../img/parallax_images/slide6_bg.jpg) repeat left top;
+	width:100%;
+	padding:86px 0 69px;
+}
+
+#slide6 h2 span {
+	background:url(../img/parallax_images/slide6_bg.jpg) repeat left top;
+}
+
+/* _______________ ACCORDION _______________ */
+
+.accordion {
+	position:relative;
+}
+.accordion h3 {
+	position:relative;
+	z-index:10;
+	padding:0;
+}
+
+.accordion h3 span {
+	display:block;
+	position:relative;
+	margin:0 0 0 84px;
+	padding:12px 0 12px 0;
+	text-align:left;
+	text-transform:none;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:300;
+	font-size:22px;
+	line-height:22px;
+	color:#343434;
+}
+
+.accordion .accord_cont {
+	display: block;
+	margin:0 0 0 84px;
+	padding:0 41px 9px 11px;
+	background:none;
+	color:#8d8d8d;
+}
+
+
+.ac_date {
+	position:absolute;
+	top:13px;
+	left:0;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	font-size:22px;
+	line-height:20px;
+	color:#c84942;
+}
+
+/* ______________ //ACCORDION ______________ */
+
+
+/* ___________________________________ //Slide 6 ___________________________________ */ 
+
+
+
+/* ____________________________________ Slide 8 ____________________________________ */ 
+#slide8 {
+	background:url(../img/parallax_images/slide8_bg.jpg) repeat left top;
+	width:100%;
+	padding:86px 0 69px;
+}
+#slide8 h2 {color:#b8b8b8;
+}
+
+#slide8 h4 {
+	padding-bottom:10px;
+	color:#acacac;
+}
+
+/* _______________ ACCORDION_2 _______________ */
+#slide8 .ac_plmin {
+	position:absolute;
+	top:0;
+	left:105px;
+	width:65px;
+	height:47px;
+	background:url(../img/parallax_images/ac_plmin_2.png) no-repeat;
+}
+#slide8 .vert_line {
+	position:absolute;
+	top:0;
+	left:117px;
+	width:3px;
+	height:100%;
+	background:url(../img/parallax_images/vert_line_2.png) repeat-y;
+}
+#slide8 .accordion h3 span {
+	margin:0 0 0 150px;
+	color:#a3a3a3;
+}
+#slide8 .accordion .accord_cont {
+	margin:0 0 0 150px;
+	padding-left:0;
+	color:#707070;
+}
+
+
+/* ______________ //ACCORDION_2 ______________ */
+
+/* ___________________________________ //Slide 8 ___________________________________ */
+
+
+
+
+
+
+
+
+/* ____________________________________ Slide 10 ____________________________________ */ 
+#slide10 {
+	background:url(../img/parallax_images/slide10_bg.jpg) repeat left top;
+	width:100%;
+	padding:86px 0 69px;
+}
+
+/* _________________ PORTFOLIO ________________ */
+.gallery-list {
+	text-align:center;
+	margin-right:-20px !important;
+}
+#slide10 .hover_img {
+	overflow:hidden;
+	position:relative;
+	height:211px;
+	width:235px;
+	background:#c84942;
+}
+
+.img_block {
+	display:inline-block;
+	margin:0 17px 20px 0;
+	width:234px;
+	height:100%;
+}
+
+.portfolio_zoom, .portfolio_link {
+	width:40px;
+	height:41px;
+	position:absolute;
+	bottom:0;
+	background-repeat:no-repeat;
+	background-color:#343434;
+	opacity:0.6;
+	filter: alpha(opacity=60);
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+.portfolio_zoom {
+	left:77px;
+	background-image:url(../img/parallax_images/zoom.png);
+}
+.portfolio_link {
+	right:77px;
+	background-image:url(../img/parallax_images/link.png);
+}
+.portfolio_zoom:hover, .portfolio_link:hover {
+	opacity:1;
+	filter: alpha(opacity=100);
+	z-index:310;
+}
+.portfolio_zoom a, .portfolio_link a {
+	display:block;
+	width:40px;
+	height:41px;
+	text-indent:-9999px;
+}
+
+.item_description {
+	position:absolute;
+	top:0;
+	left:-235px;
+	width:235px;
+	height:208px;
+	padding:0;
+	background:#c84942;
+	border-bottom:3px solid #343434;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	text-align:center;
+	color:#fff;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+.item_description p {
+	padding:54px 10px 7px;
+	text-transform:uppercase;
+	font-size:18px;
+}
+.img_block:hover .item_description {
+	left:0;
+}
+.img_block .portf_img {
+	position:absolute;
+	right:0;
+	top:0;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+.img_block:hover .portf_img {
+	position:absolute;
+	right:-235px;
+	top:0;
+}
+
+
+
+/* ________________ //PORTFOLIO _______________ */
+
+/* ___________________________________ //Slide 10 ___________________________________ */
+
+
+
+
+
+
+
+/* ____________________________________ Slide 12 ____________________________________ */
+
+#slide12 {
+	background:url(../img/parallax_images/slide12_bg.jpg) repeat left top;
+	background-position:0 0 !important;
+	width:100%;
+	padding:86px 0 69px;
+}
+
+#slide12 h2 {color:#b8b8b8;
+}
+
+#slide12 p {color:#888888;
+}
+#slide12 .foto {
+	float:left;
+	margin:0 20px 20px 0;
+}
+
+#slide12 h5 {
+	margin:-2px 0 0 0;
+	padding-bottom:8px;
+	text-transform:none;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 31px;
+	line-height: 31px;
+	font-weight: 400;
+	color:#9b9b9b;
+}
+
+.contact_det,
+.contact_det a {
+	color:#888888;
+	line-height:26px;
+}
+.contact_det a:hover {color:#c84942;}
+
+/* ______________ SOCIALS ______________ */
+.socials a {
+	display:inline-block;
+	width:28px;
+	height:28px;
+	margin:5px 7px 0;
+	background-color:#5d5d5d;
+	transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+.socials a:hover {
+	background-color:#c84942;
+}
+.soc1 {
+	background:url(../img/parallax_images/socials.png) no-repeat;
+	background-position:0 0;
+}
+.soc2 {
+	background:url(../img/parallax_images/socials.png) no-repeat;
+	background-position:-48px 0;
+}
+.soc3 {
+	background:url(../img/parallax_images/socials.png) no-repeat;
+	background-position:-96px 0;
+}
+.soc4 {
+	background:url(../img/parallax_images/socials.png) no-repeat;
+	background-position:-144px 0;
+}
+
+/* _____________ //SOCIALS _____________ */
+
+
+/* ____________________________________ //Slide 12 ____________________________________ */
+
+/* ____________________________________ FOOTER ____________________________________ */
+#footer {
+	position:relative;
+	z-index:12;
+	background:#3e3e3e;
+	padding:27px 0 340px 0;
+}
+.copyright {
+	float:left;
+	text-transform:uppercase;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	color:#9b9b9b;
+}
+.copyright a {
+	color:#c84942;
+}
+.copyright a:hover {text-decoration:none;color:#fff;
+}
+
+/* _____________ BACK_TOP ___________ */
+#back_top {
+	float:right;
+}
+#back_top a.button {
+	cursor:pointer;
+	position:relative;
+	z-index:300;
+	display:block;
+	margin:0;
+	width:27px;
+	height:28px;
+	background:url(../img/parallax_images/back_top.png) no-repeat;
+	text-transform:uppercase;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:400;
+	color:#fff;
+}
+#back_top a.button:hover {text-decoration:none;}
+/* ____________ //BACK_TOP __________ */
+
+/* ___________________________________ //FOOTER ___________________________________ */
+
+
+
+
+
+
+
+
